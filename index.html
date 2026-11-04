@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Cupcake Page</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+  <body>
+
+    <nav>
+        <div class="logo">Essinam Bakery🥯🧁</div>
+        <ul>
+            <li onclick="showPage('landingPage')">Home</li>
+            <li onclick="scrollToSection('about')">About</li>
+            <li onclick="scrollToSection('pricing')">Pricing</li>
+            <li onclick="scrollToSection('contact')">Contact</li>
+        </ul>
+            <button class="login">Login</button>
+    </nav>
+
+
+<main>
+
+    <!-- LEFT -->
+    <div class="left">
+      <h1>REFRESHING TASTE IN<br>EVERY <span>BITE</span></h1>
+      <p>Indulge in the delightful taste of our cupcakes, crafted with the finest ingredients.</p>
+      <div class="reviews">⭐⭐⭐⭐⭐ <span>100+ reviews</span></div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="center">
+      <img class="main-img" id="heroImg" src="Cupcake-Chocolate.png" alt="Chocolate" />
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <div class="active-card" id="activeCard">
+        <img src="Cupcake-Chocolate.png" alt="Active" class="card-img"/>
+        <div>
+          <h2 id="activeTitle">CHOCOLATE FLAVOR</h2>
+          <p id="activeDesc">Indulge in the delightful</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+      <div class="menu-list">
+        <div class="menu-item" onclick="switchItem(1)">
+          <img src="Cupcake-Bannana.png" alt="Cupcake-Bannana"/>
+          <div>
+            <strong>BANNNA FLAVOR</strong>
+            <p>Indulge in the delightful</p>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="menu-item" onclick="switchItem(2)">
+          <img src="Cupcake-Strawberry.png" alt="Cupcake-Strawberry"/>
+          <div>
+            <strong>STRAWBERRY FLAVOR</strong>
+            <p>Indulge in the delightful</p>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="menu-item" onclick="switchItem(3)">
+          <img src="Cupcake-Oreos.png" alt="Cupcake-Oreos"/>
+          <div>
+            <strong>OREO FLAVOR</strong>
+            <p>Indulge in the delightful</p>
+            <span>⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Order Button -->
+  <button class="order-btn" onclick="showPage('menuPage')">
+    Order Now
+    <span style="background: #612c07; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; "> → </span>
+  </button>
+  </main>
+
+  <div class="networks">
+  <i class='bx bxl-instagram-alt'></i>
+<i class='bx bxl-tiktok'></i>
+<i class='bx bxl-facebook'></i>
+<i class='bx bxl-youtube'></i>
+</div>
+
+
+    <!---PAGE 2 - SLIDER--->
+<section class="page" id="menuPage">
+
+  <div class="page-header">
+    <button onclick="showPage('landingPage')">←</button>
+    <h2>Our Menu</h2>
+    <div class="cart-icon" onclick="showPage('cartPage')">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </div>
+
+<section id="tranding">
+    <div class="container">
+    <div class="swiper tranding-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="Cupcake-Bannana.png" alt="Tranding">
+                    </div>
+                 </div>
+
+             <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="Cupcake-Chocolate.png" alt="Tranding">
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="Cupcake-Oreos.png" alt="Tranding">
+                </div>
+            </div>
+       
+            <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="Cupcake-Strawberry.png" alt="Tranding">
+                </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+            <img src="Cupcake-Honey&deit.png" alt="Tranding">
+           </div>
+        </div>
+
+    <div class="swiper-slide tranding-slide">
+       <div class="tranding-slide-img">
+       <img src="Cupcake-Special.png" alt="Tranding">
+      </div>   
+    </div>
+   </div>
+</section>
+
+<div class="networks">
+  <i class='bx bxl-instagram-alt'></i>
+<i class='bx bxl-tiktok'></i>
+<i class='bx bxl-facebook'></i>
+<i class='bx bxl-youtube'></i>
+</div>
+
+<!-- javascript -->
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.esm.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script src="./script.js"></script>
+</body>
+</html>
